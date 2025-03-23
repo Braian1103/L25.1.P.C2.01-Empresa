@@ -1,6 +1,6 @@
 export default class Cl_Personas {
-    constructor(nomnbre, edad,tipo) {
-        this.nombre = nomnbre;
+    constructor(nombre, edad,tipo) {
+        this.nombre = nombre;
         this.edad = edad;
         this.tipo = tipo
     }
@@ -23,12 +23,8 @@ export default class Cl_Personas {
         return this._tipo;
     }
     mayorEdad() {
-        return this.edad >= 18;
+        return this.edad >= 18 ? "SI" : "NO";
     }
-        mayorEdadSalida() {
-            if (this.edad >= 18) return "SI"
-            else return "NO"
-        }
     
     sueldoBase() {
         return 150;
